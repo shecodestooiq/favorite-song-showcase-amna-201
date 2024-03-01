@@ -9,18 +9,8 @@ function displaySongInfo() {
     document.getElementById("display-des").innerHTML=desc;
     document.getElementById("display-year").innerHTML=listenedYear;
     
-    const youtube = extractVideoId(link);
-    
-    if (youtube) {
-        const sour = "https://www.youtube.com/embed/" + youtube;
-        const iframe = document.createElement("iframe");
-        const newSour = document.getElementById("newsour");
-        newSour.innerHTML = "";
-        newSour.appendChild(iframe);
-    } else {
-console.log("no vid");    
-}
-
+    let youtube ="https://www.youtube.com/embed/"+ link;
+    document.getElementById("display-yotL").innerHTML='<iframe width= "600"  height="400" src=""'+youtube+'"framborder="1" >';
     document.getElementById("info").style.display="none";
     document.getElementById("display").style.display="block";
 

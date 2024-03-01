@@ -7,6 +7,31 @@
   </head>
 
   <body>
+    <div  id="display" style="display: none;">
+<div id="display-song"></div>
+<div id="display-yotL"> </div>
+<div id="display-des"></div>
+<div id="display-year"></div>
+    </div>
+    <form id="info"> 
+      <div>
+        <lable for="songname"> Song Name:</lable>
+        <input type="text" name="songname" id="songname">
+      </div>
+      <div>
+        <lable for="youtubelink">Youtube Link</lable>
+        <input type="text" name="youtube link" id="youtubelink">
+      </div>
+      <div>
+        <lable for="description">Description:</lable>
+<textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <lable for="year">Year:</lable>
+        <input type="number" name="year" id="year" minlength="4"  maxlength="4"  min="1960" >
+      </div>
+      <button type="submit" id="submit" onclick="displaySongInfo()">Submit</button>
+    </form>
     <script src="index.js"></script>
   </body>
 </html>
